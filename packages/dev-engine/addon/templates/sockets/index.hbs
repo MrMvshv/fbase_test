@@ -1,0 +1,7 @@
+<Layout::Section::Header @title={{t "developers.sockets.index.title"}}>
+    <Button @icon="headphones" @type="magic" @iconPrefix="fas" @text= {{t "developers.sockets.index.button-text"}} @onClick={{this.listenOnCustomChannel}} />
+</Layout::Section::Header>
+
+<Layout::Section::Body>
+    <Table @rows={{this.channels}} @columns={{this.columns}} @onSetup={{fn (mut this.table)}} />
+</Layout::Section::Body>
